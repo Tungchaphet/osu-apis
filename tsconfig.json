@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "target": "ES6",
+        "declaration": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "outDir": "./dist"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
