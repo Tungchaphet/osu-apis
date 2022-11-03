@@ -3,7 +3,7 @@
 - Start using osu-apis in your project by running `npm i osu-apis@latest`.
 - Documents: https://osu.ppy.sh/docs/index.html#introduction
 # Example Usage
-- Register API for requesting: https://osu.ppy.sh/home/account/edit#new-oauth-application.
+- Register application for requesting: https://osu.ppy.sh/home/account/edit#new-oauth-application.
 ```js 
     const { OsuAPI } = require('osu-apis')
     const API = new OsuAPI({
