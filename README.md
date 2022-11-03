@@ -3,7 +3,7 @@
 - Start using osu-apis in your project by running `npm i osu-apis@latest`.
 - Documents: https://osu.ppy.sh/docs/index.html#introduction
 # Example Usage
-- Register application for requesting: https://osu.ppy.sh/home/account/edit#new-oauth-application.
+- Create application for requesting at: https://osu.ppy.sh/home/account/edit#new-oauth-application.
 ```js 
     const { OsuAPI } = require('osu-apis')
     const API = new OsuAPI({
@@ -11,6 +11,13 @@
         clientSecret: 'yourclientsecret',
         redirectURI: 'https://example.com/'
     })
+```
+- Generate OAuth2 URL:
+```js
+    const csrfToken = Math.random().toString(36).substring(2)
+    const authURL = API.generateAuthURL(['identify', 'public'], csrfToken)
+
+    console.log(authURL)
 ```
 - Token request:
 ```js
