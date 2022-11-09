@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "strictNullChecks": true,
+        "strictBindCallApply": true,
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "module": "CommonJS",
+        "target": "ES2018",
+        "declaration": true,
+        "noImplicitAny": true,
+        "outDir": "./dist",
+        "removeComments": false,
+        "moduleResolution": "Node"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
